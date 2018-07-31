@@ -59,6 +59,8 @@
 				<version>1.9.5</version>
 				<configuration>
 					<connectionType>developerConnection</connectionType>
+					<username>cutenina</username>
+					<password>hy5317321</password>
 				</configuration>
 			</plugin>
 		</plugins>
