@@ -58,7 +58,7 @@ public class FourMethodController {
      */
     @DeleteMapping("/del")
     public String mydelete(@RequestParam(value = "id")Integer id){
-        return "mydeleteid:"+id;
+        return "ninadeleteid:"+id;
     }
 
 }
