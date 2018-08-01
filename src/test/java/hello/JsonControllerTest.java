@@ -15,7 +15,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
-import static org.junit.Assert.*;
+
 
 /**
  * @author:Nina
@@ -49,7 +49,7 @@ public class JsonControllerTest {
     @Test
     public void msg() throws Exception {
 
-        mvc.perform(MockMvcRequestBuilders.get("/list")
+        mvc.perform(MockMvcRequestBuilders.get("/buyer/product/list")
                 .accept(MediaType.APPLICATION_JSON))
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andDo(MockMvcResultHandlers.print())
