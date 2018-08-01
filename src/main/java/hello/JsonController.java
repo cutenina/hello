@@ -1,6 +1,7 @@
 package hello;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import pojo.Msg;
 import pojo.RestfulUtil;
@@ -14,6 +15,7 @@ import pojo.RestfulUtil;
  * @Date date: 2018/7/31
  */
 @RestController
+@RequestMapping("/buyer/product")
 public class JsonController {
     /**
      * @Author Nina

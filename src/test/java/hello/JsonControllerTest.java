@@ -4,6 +4,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
@@ -26,6 +28,7 @@ import static org.junit.Assert.*;
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
 public class JsonControllerTest {
+    private static final Logger logger=LoggerFactory.getLogger(JsonControllerTest.class);
     private MockMvc mvc;
 
     @Before
@@ -51,5 +54,10 @@ public class JsonControllerTest {
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andDo(MockMvcResultHandlers.print())
                 .andReturn();
+        logger.error("error测试");//logger.error("",e)把异常打印到日志
+        logger.warn("warn");
+        logger.info("info");
+        logger.debug("debug");
+
     }
 }

@@ -28,10 +28,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @Description:
  * @Date date: 2018/7/30
  */
-
 @RunWith(SpringRunner.class)
 @WebMvcTest(GreetingController.class)
-
 public class GreetingControllerTest {
     @Autowired
    private MockMvc mvc;
